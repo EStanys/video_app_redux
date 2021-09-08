@@ -1,7 +1,7 @@
-import VideoAppFilters from '../VideoAppFilters/VideoAppFilters';
-import VideoAppHeader from '../VideoAppHeader/VideoAppHeader';
+import VideoAppFilters from '../../components/VideoAppFilters/VideoAppFilters';
+import VideoAppHeader from '../../components/VideoAppHeader/VideoAppHeader';
 import styles from './VideoApp.module.css';
-import VideoAppMediaScreen from '../VideoAppMediaScreen/VideoAppMediaScreen';
+import VideoAppMediaScreen from '../../components/VideoAppMediaScreen/VideoAppMediaScreen';
 
 const VideoApp = () => {
   return (
