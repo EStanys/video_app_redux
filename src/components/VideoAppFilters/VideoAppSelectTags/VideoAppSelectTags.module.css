@@ -1,26 +1,18 @@
-.filter-input-container {
+.filter-select-tag-container {
   display: flex;
   flex-direction: column;
   gap: 0.9rem;
 }
 
-.filter-input-container input{
+.filter-select-tag-container select{
   padding: 5px;
   font-size: 1rem;
   width: 275px;
-  box-sizing: border-box;
   border-radius: 7px;
-  border-width: 1px;
-}
-
-.filter-input-container ::placeholder{
-  font-size: 1rem;
-  padding: 5px;
-  padding-top: 20px;
 }
 
 @media screen and (max-width: 850px) {
-  .filter-input-container input{
+  .filter-select-tag-container select{
   padding: 5px;
   font-size: 1rem;
   width: 200px;
@@ -28,13 +20,13 @@
 }
 
 @media screen and (max-width: 700px) {
-  .filter-input-container input{
+  .filter-select-tag-container select{
   width: 300px;
 }
 }
 
 @media screen and (max-width: 576px) {
-  .filter-input-container input{
+  .filter-select-tag-container select{
   width: 100%;
 }
 }

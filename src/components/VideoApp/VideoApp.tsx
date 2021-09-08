@@ -6,11 +6,13 @@ import VideoAppMediaScreen from '../VideoAppMediaScreen/VideoAppMediaScreen';
 const VideoApp = () => {
   return (
     <div className={styles.container}>
-      <VideoAppHeader title={"VideoApp"}/>
-      <VideoAppFilters/>
-      <VideoAppMediaScreen/>
+      <VideoAppHeader title={'VideoApp'} />
+      <div className={styles['main-grid-container']}>
+        <VideoAppFilters />
+        <VideoAppMediaScreen />
+      </div>
     </div>
-  )
+  );
 }
 
 export default VideoApp

@@ -1,10 +1,10 @@
 import React from 'react'
-import styles from 'VideoAppVideosNoFilter.module.css';
+import styles from '../VideoAppSelectTags.module.css';
 
 const VideoAppVideosNoFilter: React.FC<{ label?: string }> = ({ label }) => {
   return (
     <div>
-      <div className={styles['video-filter-select-tag-container']}>
+      <div className={styles['filter-select-tag-container']}>
         <label htmlFor='{id}'>{label}</label>
         <select id='{id}' onChange={() => {}} value='{value}'>
           {/* {options.map((option) => (
