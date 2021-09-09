@@ -3,7 +3,6 @@ import { composeWithDevTools } from 'redux-devtools-extension';
 import { applyMiddleware, combineReducers } from 'redux';
 import thunk from 'redux-thunk';
 import { randomVideoReducer } from './reducers/videoReducers';
-import { IVideoReducer } from '../utils/types';
 
 const reducers = combineReducers({
   randomVideos: randomVideoReducer,
