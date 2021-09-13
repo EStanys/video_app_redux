@@ -8,7 +8,8 @@ import { IVideoReducer } from '../../utils/types';
 
 const VideoAppMediaScreen: React.FC = () => {
   const [loop, setLoop] = useState(false)
-  const { videos, currentVideoUrl, poster } = useSelector<State, IVideoReducer>((state) => state.randomVideos);
+  const { videos, currentVideoUrl, poster, videoDuration } = useSelector<State, IVideoReducer>((state) => state.randomVideos);
+  
 
   const dispath = useDispatch();
 
@@ -34,14 +35,10 @@ const VideoAppMediaScreen: React.FC = () => {
 
     timer = setTimeout(() => {
       dispath(playNextVideo());
-    }, 5500);
+    }, +(videoDuration + '500'));
   };
 
   
-  
-  
-    
-    
   return (
     <>
       <div className={styles['video-container']}>

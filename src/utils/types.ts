@@ -3,6 +3,8 @@ export interface IVideoReducer {
   currentVideoIndex: number;
   currentVideoUrl: string;
   poster: string;
+  numOfVideosToPlay: number;
+  videoDuration: number;
 }
 
 export interface IFetchResponse {
@@ -11,7 +13,7 @@ export interface IFetchResponse {
 }
 
 export interface IDIspatch {
-      payload?: IFetchResponse;
+      payload?: IFetchResponse | number
       type: string;
     }
 
